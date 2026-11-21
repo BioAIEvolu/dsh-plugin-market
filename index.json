@@ -1,182 +1,194 @@
 {
-    "format": 1,
-    "title": {
-        "en": "BioAIEvolu DSH plugins",
-        "zh": "BioAIEvolu 的 DSH 插件索引"
-    },
-    "description": {
-        "en": "Curated DeepSeek Harness plugins published by BioAIEvolu: Token/cost dashboard and Markdown rendering.",
-        "zh": "BioAIEvolu 发布的 DeepSeek Harness 插件精选：Token 用量费用看板、Markdown 渲染。"
-    },
-    "metadata": {
-        "categories": {
-            "tools": {
-                "title": {
-                    "en": "Tools",
-                    "zh": "工具"
-                }
-            },
-            "docs": {
-                "title": {
-                    "en": "Docs and UI",
-                    "zh": "文档与界面"
-                }
-            }
+  "format": 1,
+  "title": {
+    "en": "BioAIEvolu DSH plugins",
+    "zh": "BioAIEvolu 的 DSH 插件索引"
+  },
+  "description": {
+    "en": "Curated DeepSeek Harness plugins published by BioAIEvolu: Token/cost dashboard and Markdown rendering.",
+    "zh": "BioAIEvolu 发布的 DeepSeek Harness 插件精选：Token 用量费用看板、Markdown 渲染。"
+  },
+  "metadata": {
+    "categories": {
+      "tools": {
+        "title": {
+          "en": "Tools",
+          "zh": "工具"
         }
+      },
+      "docs": {
+        "title": {
+          "en": "Docs and UI",
+          "zh": "文档与界面"
+        }
+      }
     },
-    "plugins": [
+    "name": "BioAIEvolu DSH plugins"
+  },
+  "plugins": [
+    {
+      "name": "dsh-token-tally",
+      "title": {
+        "en": "Token Tally",
+        "zh": "Token 台账"
+      },
+      "description": {
+        "en": "Token and cost dashboard: model-by-time stacked bars, trend lines, donut charts, rankings, a model comparison table (speed, price per M tokens, cache hit rate, P50/P95) and a 53-week heatmap, aggregated locally.",
+        "zh": "Token 用量与费用看板：模型×时间堆叠柱、趋势折线、环形分布、调用排行、模型对比表（速度/每百万 Token 单价/缓存命中率/P50·P95）与 53 周热力图，全部本地聚合。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij4KICA8dGl0bGU+ZHNoLXRva2VuLXRhbGx5IMK3IFRva2VuIOWPsOi0pjwvdGl0bGU+CiAgPHJlY3QgeD0iNCIgeT0iNCIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iMTIiIGZpbGw9IiMwQzQ0N0MiLz4KICA8cmVjdCB4PSIxNCIgeT0iMTUiIHdpZHRoPSIzNiIgaGVpZ2h0PSI3IiByeD0iMy41IiBmaWxsPSIjOUZFMUNCIi8+CiAgPHJlY3QgeD0iMTQiIHk9IjI4LjUiIHdpZHRoPSIyMiIgaGVpZ2h0PSI3IiByeD0iMy41IiBmaWxsPSIjRkFDNzc1Ii8+CiAgPHJlY3QgeD0iMTQiIHk9IjQyIiB3aWR0aD0iMzAiIGhlaWdodD0iNyIgcng9IjMuNSIgZmlsbD0iI0I1RDRGNCIvPgo8L3N2Zz4K",
+      "author": "BioAIEvolu",
+      "homepage": "https://github.com/BioAIEvolu/dsh-token-tally#readme",
+      "repository": {
+        "url": "https://github.com/BioAIEvolu/dsh-token-tally"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": [
+          "token usage",
+          "cost dashboard",
+          "usage analytics",
+          "llm cost",
+          "model comparison",
+          "heatmap",
+          "analytics",
+          "deepseek",
+          "local-first"
+        ]
+      },
+      "versions": [
         {
-            "name": "dsh-token-tally",
-            "title": {
-                "en": "Token Tally",
-                "zh": "Token 台账"
-            },
-            "description": {
-                "en": "Token and cost dashboard: model-by-time stacked bars, trend lines, donut charts, rankings, a model comparison table (speed, price per M tokens, cache hit rate, P50/P95) and a 53-week heatmap, aggregated locally.",
-                "zh": "Token 用量与费用看板：模型×时间堆叠柱、趋势折线、环形分布、调用排行、模型对比表（速度/每百万 Token 单价/缓存命中率/P50·P95）与 53 周热力图，全部本地聚合。"
-            },
-            "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij4KICA8dGl0bGU+ZHNoLXRva2VuLXRhbGx5IMK3IFRva2VuIOWPsOi0pjwvdGl0bGU+CiAgPHJlY3QgeD0iNCIgeT0iNCIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iMTIiIGZpbGw9IiMwQzQ0N0MiLz4KICA8cmVjdCB4PSIxNCIgeT0iMTUiIHdpZHRoPSIzNiIgaGVpZ2h0PSI3IiByeD0iMy41IiBmaWxsPSIjOUZFMUNCIi8+CiAgPHJlY3QgeD0iMTQiIHk9IjI4LjUiIHdpZHRoPSIyMiIgaGVpZ2h0PSI3IiByeD0iMy41IiBmaWxsPSIjRkFDNzc1Ii8+CiAgPHJlY3QgeD0iMTQiIHk9IjQyIiB3aWR0aD0iMzAiIGhlaWdodD0iNyIgcng9IjMuNSIgZmlsbD0iI0I1RDRGNCIvPgo8L3N2Zz4K",
-            "author": "BioAIEvolu",
-            "homepage": "https://github.com/BioAIEvolu/dsh-token-tally#readme",
-            "repository": {
-                "url": "https://github.com/BioAIEvolu/dsh-token-tally"
-            },
-            "metadata": {
-                "category": "tools",
-                "keywords": [
-                    "token usage",
-                    "cost dashboard",
-                    "usage analytics",
-                    "llm cost",
-                    "model comparison",
-                    "heatmap",
-                    "analytics",
-                    "deepseek",
-                    "local-first"
-                ]
-            },
-            "versions": [
-                {
-                    "version": "0.1.3",
-                    "publishTimestamp": 1795229059,
-                    "source": {
-                        "type": "npm",
-                        "registry": "https://registry.npmjs.org/"
-                    },
-                    "engines": {
-                        "dsh": ">=0.2.2-rc.5 <0.3.0-0"
-                    }
-                },
-                {
-                    "version": "0.1.2",
-                    "publishTimestamp": 1795194058,
-                    "source": {
-                        "type": "npm",
-                        "registry": "https://registry.npmjs.org/"
-                    },
-                    "engines": {
-                        "dsh": ">=0.2.2-rc.5 <0.3.0-0"
-                    }
-                },
-                {
-                    "version": "0.1.1",
-                    "publishTimestamp": 1795161357,
-                    "source": {
-                        "type": "npm",
-                        "registry": "https://registry.npmjs.org/"
-                    },
-                    "engines": {
-                        "dsh": ">=0.2.2-rc.5 <0.3.0-0"
-                    }
-                },
-                {
-                    "version": "0.1.0",
-                    "publishTimestamp": 1795111543,
-                    "source": {
-                        "type": "npm",
-                        "registry": "https://registry.npmjs.org/"
-                    },
-                    "engines": {
-                        "dsh": ">=0.2.2-rc.5 <0.3.0-0"
-                    }
-                }
-            ]
+          "version": "0.1.3",
+          "publishTimestamp": 1795229059,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+          }
         },
         {
-            "name": "dsh-md-studio",
-            "title": {
-                "en": "Markdown Studio",
-                "zh": "Markdown 渲染插件"
-            },
-            "description": {
-                "en": "Markdown renderer for right-sidebar file preview and in-chat messages: GFM tables, Mermaid diagrams, hand-written SVG architecture diagrams, KaTeX math, syntax highlighting. Fully offline.",
-                "zh": "右侧文件预览与对话消息双场景 Markdown 渲染：GFM 表格、Mermaid 流程图、手写 SVG 架构图、KaTeX 公式、代码高亮，渲染引擎随包内置完全离线。"
-            },
-            "author": "BioAIEvolu",
-            "homepage": "https://github.com/BioAIEvolu/dsh-md-studio#readme",
-            "repository": {
-                "url": "https://github.com/BioAIEvolu/dsh-md-studio"
-            },
-            "metadata": {
-                "category": "docs",
-                "keywords": [
-                    "markdown",
-                    "mermaid",
-                    "diagram",
-                    "katex",
-                    "math",
-                    "syntax highlighting",
-                    "code highlight",
-                    "svg",
-                    "offline"
-                ]
-            },
-            "versions": [
-                {
-                    "version": "1.3.12",
-                    "publishTimestamp": 1795229053,
-                    "source": {
-                        "type": "npm",
-                        "registry": "https://registry.npmjs.org/"
-                    },
-                    "engines": {
-                        "dsh": ">=0.2.2-rc.5 <0.3.0-0"
-                    }
-                },
-                {
-                    "version": "1.3.11",
-                    "publishTimestamp": 1795194053,
-                    "source": {
-                        "type": "npm",
-                        "registry": "https://registry.npmjs.org/"
-                    },
-                    "engines": {
-                        "dsh": ">=0.2.2-rc.5 <0.3.0-0"
-                    }
-                },
-                {
-                    "version": "1.3.10",
-                    "publishTimestamp": 1795174275,
-                    "source": {
-                        "type": "npm",
-                        "registry": "https://registry.npmjs.org/"
-                    },
-                    "engines": {
-                        "dsh": ">=0.2.2-rc.5 <0.3.0-0"
-                    }
-                },
-                {
-                    "version": "1.3.9",
-                    "publishTimestamp": 1794974690,
-                    "source": {
-                        "type": "npm",
-                        "registry": "https://registry.npmjs.org/"
-                    },
-                    "engines": {
-                        "dsh": ">=0.2.2-rc.5 <0.3.0-0"
-                    }
-                }
-            ]
+          "version": "0.1.2",
+          "publishTimestamp": 1795194058,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+          }
+        },
+        {
+          "version": "0.1.1",
+          "publishTimestamp": 1795161357,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+          }
+        },
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1795111543,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+          }
         }
-    ]
+      ]
+    },
+    {
+      "name": "dsh-md-studio",
+      "title": {
+        "en": "Markdown Studio",
+        "zh": "Markdown 渲染插件"
+      },
+      "description": {
+        "en": "Markdown renderer for right-sidebar file preview and in-chat messages: GFM tables, Mermaid diagrams, hand-written SVG architecture diagrams, KaTeX math, syntax highlighting. Fully offline.",
+        "zh": "右侧文件预览与对话消息双场景 Markdown 渲染：GFM 表格、Mermaid 流程图、手写 SVG 架构图、KaTeX 公式、代码高亮，渲染引擎随包内置完全离线。"
+      },
+      "author": "BioAIEvolu",
+      "homepage": "https://github.com/BioAIEvolu/dsh-md-studio#readme",
+      "repository": {
+        "url": "https://github.com/BioAIEvolu/dsh-md-studio"
+      },
+      "metadata": {
+        "category": "docs",
+        "keywords": [
+          "markdown",
+          "mermaid",
+          "diagram",
+          "katex",
+          "math",
+          "syntax highlighting",
+          "code highlight",
+          "svg",
+          "offline"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.3.13",
+          "publishTimestamp": 1795247774,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+          }
+        },
+        {
+          "version": "1.3.12",
+          "publishTimestamp": 1795229053,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+          }
+        },
+        {
+          "version": "1.3.11",
+          "publishTimestamp": 1795194053,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+          }
+        },
+        {
+          "version": "1.3.10",
+          "publishTimestamp": 1795174275,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+          }
+        },
+        {
+          "version": "1.3.9",
+          "publishTimestamp": 1794974690,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5 <0.3.0-0"
+          }
+        }
+      ]
+    }
+  ]
 }
